@@ -1,0 +1,5 @@
+DOB: 5 sep 2005
+samples:
+ - { date: 5 may 2010, weight: 35kg, height: 120cm } #10
+ - { date: 5 may 2015, weight: 60kg, height: 170cm } #10
+ - { date: 2 jan 2020, weight: 80kg, height: 180cm } #13
