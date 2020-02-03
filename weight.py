@@ -42,7 +42,7 @@ def parse_samples(samples, dob):
         d = dateparser.parse(dateStr, settings={'DATE_ORDER': 'DMY'})
         try:
             weight, wu = parse_unit(weightStr)
-            if wu == 'lb':
+            if wu == 'kg':
                 weight *= 0.453592
             else:
                 print("warning: bad weight unit, expected kg or lb")
@@ -60,7 +60,7 @@ def parse_samples(samples, dob):
                 height = ft * 0.3048 + inc * 0.0254
             except ValueError:
                 print("error: bad height record '%s'" % weightStr)
-				continue
+                continue
         
         delta = (d - dob)
         w = float(weight)
